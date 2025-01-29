@@ -1,4 +1,5 @@
 xemu:
+	../build/checkbas65.py fdc.bas
 	xemu-xmega65 -8 fdc.d81 -importbas fdc.bas -driveled -fastboot -dumpmem dump.mem
 
 dump.mem: fdc.bas Makefile
