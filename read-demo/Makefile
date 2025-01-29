@@ -4,13 +4,13 @@ xemu:
 dump.mem: fdc.bas Makefile
 	$(MAKE) xemu
 
-fdc.prg: dump.mem fdc.bas Makefile extractbas65.py
-	./extractbas65.py dump.mem fdc.prg
+fdc.prg: dump.mem fdc.bas Makefile
+	../build/extractbas65.py dump.mem fdc.prg
 
 mega65: fdc.prg
 	mega65_etherload fdc.prg
 
 clean:
-	rm -f dump.mem fdc.prg
+	rm -f dump.mem
 
 .PHONY: xemu clean
