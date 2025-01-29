@@ -10,14 +10,14 @@ PEEKs (direct I/O).
 
 ## Stuff
 
-### fdc.bas
+Directories:
 
-The BASIC65 program itself. In TEXT format.
+### read-demo/
 
-### fdc.prg
+A simple sector read demonstartion with hex dump and such.
+Note: the file fdc.d81 is **not** something you can use too much,
+it's a test file. Use fdc.prg if you want the actual tokenized program.
 
-The BASIC65 program in tokenized form.
+### imager/
 
-### fdc.d81
-
-Do not use this! This is not fdc.prg in a D81 image, but a test D81 image!
+An attempt to write a simple MS-DOS floppy imager.
